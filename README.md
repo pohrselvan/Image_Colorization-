@@ -16,7 +16,7 @@ Pix2Pix was introduced in the paper "**Image-to-Image Translation with Condition
  **Versatility:**  The architecture can be easily adapted for various image-to-image translation tasks beyond colorization, making it a powerful tool in computer vision.
 
  research paper based on pix2pix:
- ->[For understanding the pix2pix gan and this paper prodives optimization also](https://arxiv.org/pdf/1611.07004)
+ ->[For understanding the pix2pix gan and this paper prodives optimization also](https://arxiv.org/pdf/1611.07004)\
  ->[This paper for DCGAN and basic idea of gan](https://arxiv.org/abs/1511.06434)
 
 ## A small summary about U-Net Architecture
