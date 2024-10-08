@@ -9,17 +9,23 @@ This dataset contains two folder one is **l** -> contains **grayscale image** an
 ## Why pix2pix?
 Pix2Pix was introduced in the paper "**Image-to-Image Translation with Conditional Adversarial Networks**" by Isola et al. (2017). The model uses a generator and discriminator to achieve image-to-image translation tasks. Here’s why Pix2Pix is particularly well-suited for image colorization:
 
-    **Conditional Learning:** Pix2Pix allows for conditional generation based on input images, making it ideal for colorization where the output is directly dependent on the grayscale input.
+ **Conditional Learning:** Pix2Pix allows for conditional generation based on input images, making it ideal for colorization where the output is directly dependent on the grayscale input.
 
-   ** Adversarial Training:** The generator and discriminator work against each other, improving the realism of the generated images. The discriminator helps the generator create more convincing outputs by providing feedback during training.
+ **Adversarial Training:** The generator and discriminator work against each other, improving the realism of the generated images. The discriminator helps the generator create more convincing outputs by providing feedback during training.
 
-    **Versatility:**  The architecture can be easily adapted for various image-to-image translation tasks beyond colorization, making it a powerful tool in computer vision.
+ **Versatility:**  The architecture can be easily adapted for various image-to-image translation tasks beyond colorization, making it a powerful tool in computer vision.
+
+ research paper based on pix2pix:
+ ->[For understanding the pix2pix gan and this paper prodives optimization also](https://arxiv.org/pdf/1611.07004)
+ ->[This paper for DCGAN and basic idea of gan](https://arxiv.org/abs/1511.06434)
 
 ## A small summary about U-Net Architecture
 The generator in this project is based on the U-Net architecture, which was originally designed for biomedical image segmentation. It has since been widely adopted in various image-to-image translation tasks, including colorization. Key features of the U-Net architecture include:
 
-    **Encoder-Decoder Structure:** U-Net has a symmetric encoder-decoder structure that captures context through downsampling (encoder) and allows precise localization via upsampling (decoder).
+  **Encoder-Decoder Structure:** U-Net has a symmetric encoder-decoder structure that captures context through downsampling (encoder) and allows precise localization via upsampling (decoder).
 
-    **Skip Connections:** The architecture includes skip connections between corresponding encoder and decoder layers. This helps preserve spatial information, which is crucial for generating high-quality images.
+   **Skip Connections:** The architecture includes skip connections between corresponding encoder and decoder layers. This helps preserve spatial information, which is crucial for generating high-quality images.
 
-    **Effective Learning:** U-Net's architecture enables efficient learning from fewer training images, making it effective for tasks with limited datasets.
+   **Effective Learning:** U-Net's architecture enables efficient learning from fewer training images, making it effective for tasks with limited datasets.
+
+   ->This website gives theortical understanding and code for u-net arhcitecture [here](https://paperswithcode.com/method/u-net)
