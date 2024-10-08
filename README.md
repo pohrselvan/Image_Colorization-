@@ -12,9 +12,22 @@ Generative Adversarial Networks (GANs) are a class of machine learning framework
 
    **Adversarial Training:** The generator and discriminator are trained simultaneously in a competitive setting. The generator aims to improve its ability to produce realistic samples to fool the discriminator, while the discriminator strives to improve its accuracy in distinguishing real from fake data. This adversarial process leads to the generator producing increasingly realistic samples over time.
 
-## Dataset 
-The Dataset used in the pix2pix model is [dataset](https://www.kaggle.com/datasets/shravankumar9892/image-colorization).
-This dataset contains two folder one is **l** -> contains **grayscale image** and **ab** -> **contains a and b dimensions of LAB**
+##Types of GANs
+
+There are several variations of GANs, each designed to address specific challenges or improve performance in various tasks. Here are some common types:
+
+ **1.DCGAN (Deep Convolutional GAN):**
+        Incorporates deep convolutional networks into the GAN framework. It uses convolutional layers in both the generator and discriminator, making it particularly effective for image generation tasks.
+
+ **2.Conditional GAN (cGAN):**
+        Extends the GAN framework by conditioning the model on additional information (e.g., class labels or other input data). This allows the generator to produce data samples that correspond to specific categories or attributes.
+
+ **3.Pix2Pix**
+        A type of conditional GAN specifically designed for image-to-image translation tasks, such as converting grayscale images to color. It uses paired training data to learn the mapping between input and output images.
+
+  **4.CycleGAN:**
+        Designed for unpaired image-to-image translation. It learns to translate images from one domain to another without needing paired samples. For example, it can convert images of horses to zebras and vice versa.
+
 
 ## Why pix2pix?
 Pix2Pix was introduced in the paper "**Image-to-Image Translation with Conditional Adversarial Networks**" by Isola et al. (2017). The model uses a generator and discriminator to achieve image-to-image translation tasks. Here’s why Pix2Pix is particularly well-suited for image colorization:
@@ -39,6 +52,11 @@ The generator in this project is based on the U-Net architecture, which was orig
    **Effective Learning:** U-Net's architecture enables efficient learning from fewer training images, making it effective for tasks with limited datasets.
 
    ->This website gives theortical understanding and code for u-net arhcitecture [here](https://paperswithcode.com/method/u-net)
+
+ 
+## Dataset 
+The Dataset used in the pix2pix model is [dataset](https://www.kaggle.com/datasets/shravankumar9892/image-colorization).
+This dataset contains two folder one is **l** -> contains **grayscale image** and **ab** -> **contains a and b dimensions of LAB**
 
 ## Reference
 Pytroch -> https://www.learnpytorch.io/
