@@ -12,7 +12,7 @@ Generative Adversarial Networks (GANs) are a class of machine learning framework
 
    **Adversarial Training:** The generator and discriminator are trained simultaneously in a competitive setting. The generator aims to improve its ability to produce realistic samples to fool the discriminator, while the discriminator strives to improve its accuracy in distinguishing real from fake data. This adversarial process leads to the generator producing increasingly realistic samples over time.
 
-##Types of GANs
+## Types of GANs
 
 There are several variations of GANs, each designed to address specific challenges or improve performance in various tasks. Here are some common types:
 
@@ -59,7 +59,7 @@ The Dataset used in the pix2pix model is [dataset](https://www.kaggle.com/datase
 This dataset contains two folder one is **l** -> contains **grayscale image** and **ab** -> **contains a and b dimensions of LAB**
 
 ## Reference
-Pytroch -> https://www.learnpytorch.io/
-DCGAN in Pyroch -> https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+Pytroch -> https://www.learnpytorch.io/ \
+DCGAN in Pyroch -> https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html \
 Threotical video for understanding the GAN -> https://youtu.be/Gib_kiXgnvA?si=JbnLad4BbqKIhfpe
 
